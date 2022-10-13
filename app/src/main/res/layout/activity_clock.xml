@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ClockActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 注意添加自定义View组件的标签名：包名 + 自定义View类名-->
+        <!--  控件背景设置为黑色-->
+<!--        <com.example.helloworld.view.WatchView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+<!--        </com.example.helloworld.view.WatchView>-->
+
+        <com.example.helloworld.view.clock.MyClockView
+            android:id="@+id/mcv_myClock"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"/>
+            />
+<!--            monkey:backgroundColor="#666666"-->
+<!--            monkey:ScaleLine="#515151"-->
+<!--            monkey:darkColor="#80ffffff"-->
+<!--            monkey:lightColor="#ffffff"-->
+<!--            monkey:textSize="14sp" -->
+<!--            />-->
+
+<!--        <com.example.helloworld.view.ClockView tools:ignore="MissingConstraints"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+<!--        <com.example.helloworld.view.CircleView tools:ignore="MissingConstraints"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:background="#000000">-->
+<!--        </com.example.helloworld.view.CircleView>-->
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

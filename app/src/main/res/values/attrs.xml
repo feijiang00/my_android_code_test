@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WatchView">
+        <attr name="hour" format="integer"/>
+        <attr name="min" format="integer"/>
+        <attr name="sec" format="integer"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+
+    <!-- format属性可以用来限制当前自定义的属性是什么类型，
+    中间可以用 | 来连接，表示可以支持多种类型 -->
+    <attr name="user_defined_attribute" format="color" />
+    <!-- 可以指定枚举类型，用来自定义一些需要用户选择的属性，
+        比如android系统中的android:visibility属性 -->
+    <attr name="user_defined_attribute1" format="enum">
+        <enum name="type_0" value="0" />
+        <enum name="type_1" value="1" />
+    </attr>
+
+    <declare-styleable name="MyViewStyleable">
+        <attr name = "user_defined_attribute"/>
+        <attr name = "user_defined_attribute1"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClockView">
+
+        <attr name="mRadius" format="dimension"/>
+        <attr name="mCircleColor" format="color"/>
+        <attr name="mCircleWidth" format="dimension"/>
+        <attr name="mTextSize" format="dimension"/>
+        <attr name="mTextColor" format="color"/>
+        <attr name="mBigScaleColor" format="color"/>
+        <attr name="mMiddlecaleColor" format="color"/>
+        <attr name="mSmallScaleColor" format="color"/>
+        <attr name="mHourHandColor" format="color"/>
+        <attr name="mMinuteHandColor" format="color"/>
+        <attr name="mSecondHandColor" format="color"/>
+        <attr name="mHourHandWidth" format="dimension"/>
+        <attr name="mMinuteHandWidth" format="dimension"/>
+        <attr name="mSecondHandWidth" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MyClockView">
+        <attr name="clockRingWidth" format="dimension"/><!--外圈的宽度-->
+        <attr name="clockDefaultScaleWidth" format="dimension"/><!--普通刻度的宽度-->
+        <attr name="clockDefaultScaleHeight" format="dimension"/><!--普通刻度的高度-->
+        <attr name="clockSpecialScaleWidth" format="dimension"/><!--整点刻度的宽度-->
+        <attr name="clockSpecialScaleHeight" format="dimension"/><!--整点刻度的高度-->
+        <attr name="clockHWidth" format="dimension"/><!--时针的宽度-->
+        <attr name="clockMWidth" format="dimension"/><!--分针的宽度-->
+        <attr name="clockSWidth" format="dimension"/><!--秒针的宽度-->
+
+        <attr name="clockRingColor" format="color"/><!--外圈的颜色-->
+        <attr name="clockScaleColor" format="color"/><!--刻度的颜色-->
+        <attr name="clockScaleNumberColor" format="color"/><!--数字的颜色-->
+        <attr name="clockHColor" format="color"/><!--时针的颜色-->
+        <attr name="clockMColor" format="color"/><!--分针的颜色-->
+        <attr name="clockSColor" format="color"/><!--秒针的颜色-->
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-128dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我是 activitymain2"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/createDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="创建数据库" />
+
+        <Button
+            android:id="@+id/makecall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打电话" />
+
+        <Button
+            android:id="@+id/getpeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取联系人" />
+
+        <Button
+            android:id="@+id/getmyprovider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取Content" />
+
+        <ListView
+            android:id="@+id/contactsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

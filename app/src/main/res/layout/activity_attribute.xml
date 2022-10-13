@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".animation.AttributeActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/attri_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="OnAlpha"-->
+<!--            android:text="透明度渐变" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="OnScale"-->
+<!--            android:text="缩放" />-->
+
+        <EditText
+            android:id="@+id/tstart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入开始参数"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/tfinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入结束参数"
+            android:maxLines="1"
+            />
+        <EditText
+            android:id="@+id/ttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入持续时间"
+            android:maxLines="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeS"
+            android:text="切换插值器" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeA"
+            android:text="切换属性" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="play"
+            android:text="播放" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stop"
+            android:text="停止" />
+
+        <TextView
+            android:id="@+id/attri_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#00ff00"
+            android:textSize="24sp"
+            android:text="看我，我是属性动画"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
